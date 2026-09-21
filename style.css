@@ -1,0 +1,739 @@
+/* =========================
+   DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #ffffff;
+    color: #30252d;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   WARNA
+========================= */
+
+:root {
+    --maroon: #4f1c3e;
+    --blue: #093579;
+    --yellow: #fec107;
+    --white: #ffffff;
+
+    --light-maroon: #f7eef4;
+    --light-blue: #eef4fb;
+    --light-yellow: #fff8dc;
+
+    --border: #e8dce3;
+    --text-light: #675b63;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: relative;
+
+    background: var(--maroon);
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 55px 20px 50px;
+
+    overflow: hidden;
+}
+
+.header-decoration {
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border: 30px solid rgba(254, 193, 7, 0.18);
+    border-radius: 50%;
+
+    top: -90px;
+    right: -50px;
+}
+
+.header h1 {
+    position: relative;
+
+    font-size: 40px;
+    letter-spacing: 4px;
+
+    margin-bottom: 8px;
+}
+
+.header p {
+    position: relative;
+
+    max-width: 600px;
+    margin: auto;
+
+    font-size: 15px;
+    opacity: 0.92;
+}
+
+
+/* =========================
+   PEMBUKA
+========================= */
+
+.intro {
+    max-width: 900px;
+
+    margin: 35px auto 25px;
+    padding: 28px;
+
+    background: var(--white);
+
+    border: 2px solid var(--light-maroon);
+    border-radius: 18px;
+
+    box-shadow: 0 6px 22px rgba(79, 28, 62, 0.10);
+}
+
+.intro-label {
+    display: inline-block;
+
+    padding: 5px 12px;
+    margin-bottom: 12px;
+
+    background: var(--yellow);
+    color: #3d2d00;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.intro p {
+    text-align: left;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    max-width: 900px;
+
+    margin: 55px auto;
+    padding: 0 20px;
+}
+
+.number {
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--yellow);
+    color: var(--maroon);
+
+    border-radius: 50%;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(254, 193, 7, 0.25);
+}
+
+.section h2 {
+    color: var(--maroon);
+
+    text-align: center;
+
+    font-size: 28px;
+
+    margin-bottom: 23px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content-box {
+    background: var(--white);
+
+    padding: 30px;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(79, 28, 62, 0.07);
+}
+
+.content-box p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.content-box p:last-child {
+    margin-bottom: 0;
+}
+
+.content-box h3 {
+    color: var(--maroon);
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.sub-heading {
+    margin-top: 28px;
+}
+
+
+/* =========================
+   HIGHLIGHT
+========================= */
+
+.highlight {
+    margin-top: 22px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+.highlight strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.highlight ul {
+    padding-left: 20px;
+}
+
+.blue-highlight {
+    background: var(--light-blue);
+    border-left: 5px solid var(--blue);
+}
+
+.yellow-highlight {
+    background: var(--light-yellow);
+    border-left: 5px solid var(--yellow);
+}
+
+
+/* =========================
+   SOURCE CARD
+========================= */
+
+.source-card {
+    margin-top: 12px;
+    padding: 18px 22px;
+
+    background: var(--light-maroon);
+
+    border-radius: 12px;
+}
+
+.source-card h3 {
+    color: var(--maroon);
+
+    font-size: 15px;
+
+    margin-bottom: 7px;
+}
+
+.source-card a {
+    display: block;
+
+    color: var(--blue);
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin: 5px 0;
+}
+
+.source-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   JENJANG PENDIDIKAN
+========================= */
+
+.education-item {
+    padding: 20px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.education-item:first-child {
+    padding-top: 0;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.education-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 8px;
+}
+
+.education-title span {
+    min-width: 45px;
+
+    padding: 4px 7px;
+
+    background: var(--blue);
+    color: white;
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.education-title h3 {
+    margin: 0;
+}
+
+
+/* =========================
+   JALUR MASUK
+========================= */
+
+.path-card {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 15px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.path-card:first-child {
+    padding-top: 0;
+}
+
+.path-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.path-number {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    color: white;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+}
+
+.tag {
+    display: inline-block;
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tag.yellow {
+    background: var(--yellow);
+    color: #3d2d00;
+}
+
+.tag.blue {
+    background: var(--light-blue);
+    color: var(--blue);
+}
+
+.tag.maroon {
+    background: var(--light-maroon);
+    color: var(--maroon);
+}
+
+
+/* =========================
+   FAKULTAS & PRODI
+========================= */
+
+.structure {
+    text-align: center;
+}
+
+.structure-item {
+    padding: 18px;
+
+    background: var(--light-blue);
+
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+.structure-item.main {
+    background: var(--maroon);
+    color: white;
+
+    text-align: center;
+}
+
+.structure-item strong {
+    display: block;
+
+    color: var(--blue);
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+.structure-item.main strong {
+    color: white;
+}
+
+.structure-item p {
+    margin: 0;
+}
+
+.arrow {
+    color: var(--yellow);
+
+    font-size: 25px;
+    font-weight: bold;
+
+    padding: 4px;
+}
+
+.example-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: var(--light-maroon);
+
+    border-left: 5px solid var(--maroon);
+
+    border-radius: 10px;
+}
+
+.example-box h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   UKT
+========================= */
+
+.ukt-table {
+    margin: 20px 0;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.ukt-row {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    padding: 12px 15px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.ukt-row:last-child {
+    border-bottom: none;
+}
+
+.header-row {
+    background: var(--blue);
+    color: white;
+
+    font-weight: bold;
+}
+
+.ukt-row strong {
+    color: var(--maroon);
+}
+
+.header-row strong {
+    color: white;
+}
+
+.important-note {
+    padding: 17px;
+
+    background: var(--light-yellow);
+
+    border-left: 5px solid var(--yellow);
+
+    border-radius: 9px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   SUB BAGIAN SECTION 06
+========================= */
+
+.sub-section {
+    margin-top: 30px;
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+.sub-section h3 {
+    color: var(--maroon);
+    margin-bottom: 10px;
+}
+
+.simple-list {
+    padding-left: 22px;
+    margin-top: 12px;
+}
+
+.simple-list li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* =========================
+   BEASISWA
+========================= */
+
+.scholarship-card {
+    display: grid;
+
+    grid-template-columns: 50px 1fr;
+
+    gap: 15px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.scholarship-card:last-of-type {
+    border-bottom: none;
+}
+
+.scholarship-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--maroon);
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SEMUA SUMBER
+========================= */
+
+.sources-section {
+    max-width: 900px;
+
+    margin: 70px auto;
+
+    padding: 0 20px;
+}
+
+.sources-section h2 {
+    text-align: center;
+
+    color: var(--maroon);
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+.sources-list {
+    background: var(--light-maroon);
+
+    padding: 25px;
+
+    border-radius: 18px;
+}
+
+.sources-list a {
+    display: block;
+
+    padding: 13px 0;
+
+    color: var(--blue);
+
+    border-bottom: 1px solid #dfcfd9;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.sources-list a:last-child {
+    border-bottom: none;
+}
+
+.sources-list a:hover {
+    color: var(--maroon);
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 70px;
+
+    padding: 40px 20px;
+
+    background: var(--maroon);
+
+    color: white;
+
+    text-align: center;
+}
+
+footer h2 {
+    color: var(--yellow);
+
+    font-size: 25px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 42px 18px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .header p {
+        font-size: 13px;
+    }
+
+    .intro {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+
+    .section {
+        margin: 45px auto;
+        padding: 0 15px;
+    }
+
+    .section h2 {
+        font-size: 23px;
+    }
+
+    .content-box {
+        padding: 21px;
+    }
+
+    .content-box p {
+        font-size: 15px;
+    }
+
+    .path-card {
+        grid-template-columns: 45px 1fr;
+        gap: 10px;
+    }
+
+    .path-number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ukt-row {
+        grid-template-columns: 75px 1fr;
+        font-size: 14px;
+    }
+
+    .sources-section {
+        padding: 0 15px;
+    }
+
+    .sources-list {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 32px 15px;
+    }
+}
